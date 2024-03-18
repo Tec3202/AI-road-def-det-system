@@ -119,7 +119,7 @@ def main():
          # Image
         if options == 'Image':
             # re-define page title
-            p_title = "AI Road Inspection System[Image Progessing]" 
+            p_title = "Road Defect Detection System[Image]" 
             st.subheader(p_title) 
             upload_img_file = st.sidebar.file_uploader(
                 'Upload Image', type=['jpg', 'jpeg', 'png'])
@@ -147,7 +147,7 @@ def main():
                 
         if options == 'Video':
             # re-define page title
-            p_title = "AI Road Inspection System[Video Processing]"
+            p_title = "Road Defect Detection System[Video]"
             st.subheader(p_title) 
             upload_vid_file = st.sidebar.file_uploader(
                 'Upload Video', type=['mp4', 'avi', 'mkv']
