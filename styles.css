@@ -14,3 +14,13 @@ div.css-1offfwp{
   footer{
     visibility: hidden;
   }
+
+  /*div.st-emotion-cache-1wmy9hl.e1f1d6gn1{
+    border:1px solid rgb(190, 188, 188);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+  }*/
+  [data-testid="stAppViewContainer"] {
+  background-image: url('src\Deployment\roadConstructionImage.jpg')
+}
