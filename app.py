@@ -15,7 +15,6 @@ import shutil
 # from ultralytics.yolo.utils.plotting import Annotator
 from cv2 import cvtColor
 import os
-from helper import *
 
 # page configuration
 st.set_page_config(page_icon=':motorway:',page_title='road inspection system')
@@ -114,7 +113,7 @@ def main():
         st.sidebar.subheader('Settings')
         
         options = st.sidebar.radio(
-            'Options:', ('Image', 'Video','Real-time'), index=0)
+            'Options:', ('Image', 'Video'), index=0)
         
         st.sidebar.markdown("---")
          # Image
@@ -179,11 +178,6 @@ def main():
                 temp_file.close()
                 os.remove(video_path_output)
                 
-        if options == "Real-time":
-            confidence = float(st.sidebar.slider(
-                     "Select Model Confidence", 25, 100, 40)) / 100
-
-            play_webcam(confidence,model)
             
 
 
