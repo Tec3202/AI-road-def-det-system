@@ -15,6 +15,7 @@ import shutil
 # from ultralytics.yolo.utils.plotting import Annotator
 from cv2 import cvtColor
 import os
+from helper import *
 
 # page configuration
 st.set_page_config(page_icon=':motorway:',page_title='road inspection system')
@@ -172,11 +173,23 @@ def main():
                     print(video_path_output," is there")
                 
                 st.video(video_path_output,format='video/mp4')
-                
+
 
                 # Remove the temporary files
                 temp_file.close()
                 os.remove(video_path_output)
+
+         if options == 'YouTube Video':
+                 conf = float(st.sidebar.slider(
+                     "Select Model Confidence", 25, 100, 40)) / 100
+                 play_youtube_video(conf, model)
+        
+
+         if options == 'Stored Video':
+                 conf = float(st.sidebar.slider(
+                     "Select Model Confidence", 25, 100, 40)) / 100
+                 play_stored_video(conf, model)
+
                 
             
 
