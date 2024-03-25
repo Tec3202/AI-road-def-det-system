@@ -31,7 +31,7 @@ DEFAULT_DETECT_IMAGE = IMAGES_DIR / 'office_4_detected.jpg'
 # Videos config
 VIDEO_DIR = ROOT / 'videos'
 VIDEO_1_PATH = 'BritishRoadOverrunWithPotholes.mp4'
-VIDEO_2_PATH = ''
+VIDEO_2_PATH = 'TheWorstPotholesInMetroDetroitOnline-video-cutter.com.mp4'
 VIDEO_3_PATH = ''
 VIDEOS_DICT = {
     'video_1': VIDEO_1_PATH,
