@@ -114,7 +114,7 @@ def main():
         st.sidebar.subheader('Settings')
         
         options = st.sidebar.radio(
-            'Options:', ('Image', 'Video'), index=0)
+            'Options:', ('Image', 'Video','Stored Video','YouTube Video'), index=0)
         
         st.sidebar.markdown("---")
          # Image
