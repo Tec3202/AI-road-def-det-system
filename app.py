@@ -146,15 +146,15 @@ def main():
                         st.success('done!')
             
                 
-        if options == 'Video':
-            # re-define page title
-            p_title = "Road Defect Detection System[Video]"
-            st.subheader(p_title) 
-            upload_vid_file = st.sidebar.file_uploader(
+         if options == 'Video':
+             # re-define page title
+             p_title = "Road Defect Detection System[Video]"
+             st.subheader(p_title) 
+             upload_vid_file = st.sidebar.file_uploader(
                 'Upload Video', type=['mp4', 'avi', 'mkv']
                 )
-            if upload_vid_file is not None:
-            # Save the uploaded video file temporarily
+             if upload_vid_file is not None:
+                # Save the uploaded video file temporarily
                 temp_file = tempfile.NamedTemporaryFile(delete=False)
                 temp_file.write(upload_vid_file.read())
                 vid = open(temp_file.name,'rb')
